@@ -60,3 +60,8 @@ class Ghvhggfgvcafvwse(models.Model):
         on_delete=models.CASCADE,
         related_name="ghvhggfgvcafvwse_sdfaef",
     )
+
+
+class GVHVMBN(models.Model):
+    "Generated Model"
+    nbvvnb = models.BigIntegerField()
