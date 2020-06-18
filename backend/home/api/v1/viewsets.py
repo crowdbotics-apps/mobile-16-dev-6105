@@ -5,6 +5,7 @@ from .serializers import (
     GhvhggfgvcafvwseSerializer,
     GVHVMBNSerializer,
     HomePageSerializer,
+    JHjhjhSerializer,
 )
 from rest_framework.authentication import SessionAuthentication, TokenAuthentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
@@ -19,7 +20,7 @@ from home.api.v1.serializers import (
     HomePageSerializer,
     UserSerializer,
 )
-from home.models import CustomText, Ghvhggfgvcafvwse, GVHVMBN, HomePage
+from home.models import CustomText, Ghvhggfgvcafvwse, GVHVMBN, HomePage, JHjhjh
 
 
 class SignupViewSet(ModelViewSet):
@@ -75,3 +76,12 @@ class GVHVMBNViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = GVHVMBN.objects.all()
+
+
+class JHjhjhViewSet(viewsets.ModelViewSet):
+    serializer_class = JHjhjhSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = JHjhjh.objects.all()

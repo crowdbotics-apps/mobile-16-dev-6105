@@ -6,24 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0004_gvhvmbn'),
+        ("home", "0004_gvhvmbn"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='customtext',
-            name='ftghryuj5y',
-        ),
-        migrations.RemoveField(
-            model_name='customtext',
-            name='sfasdfasz',
-        ),
-        migrations.RemoveField(
-            model_name='ghvhggfgvcafvwse',
-            name='sdfaef',
-        ),
-        migrations.RemoveField(
-            model_name='homepage',
-            name='werqwrf',
-        ),
+        migrations.RemoveField(model_name="customtext", name="ftghryuj5y",),
+        migrations.RemoveField(model_name="customtext", name="sfasdfasz",),
+        migrations.RemoveField(model_name="ghvhggfgvcafvwse", name="sdfaef",),
+        migrations.RemoveField(model_name="homepage", name="werqwrf",),
     ]
